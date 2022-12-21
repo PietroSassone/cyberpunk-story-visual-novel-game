@@ -147,8 +147,7 @@ label toilet:
 
             narrator "But there's a catch! There's always one. You've offended these Japanese exchange students who are also in the toilet."
             play sound scream
-            show angry girls at center:
-                zoom 2.0
+            show angry girls at right
             narrator "They hit you a few times, screaming at you, calling you \"perverted senpai\" before they leave."
 
             hide angry girls with moveoutleft

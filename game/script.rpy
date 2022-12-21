@@ -58,7 +58,7 @@ label start:
         chicken_char = Friend(TECHNO_CHICKEN, '{color=#1b138a}Chicken ally attack: peck peck.{/color}', 100, 150, '#1b138a')
         politician_char = Friend(POLITICIAN, '{color=#756763}Politician ally attack: long boring speech.{/color}', 10, 50, '#756763')
         protesters_char = Friend(STREET_PROTESTERS, '{color=#d40000}Protester ally attack: throw molotov cocktails.{/color}', 0, 80, '#d40000')
-        hobo_char = Friend(HOBO, '{color=#79ac81}Hobo ally attack: throw dirty napkins.{/color}', 10, 20, '#79ac81')
+        hobo_char = Friend(HOBO, '{color=#79ac81}Hobo ally attack: throw dirty napkins.{/color}', 10, 40, '#79ac81')
 
         def is_squirrel():
             return player_character.get_class_name() == CYBER_SQUIRREL

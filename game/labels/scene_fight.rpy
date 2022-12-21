@@ -39,6 +39,8 @@ label enemy_attacks:
         jump ending_defeat
     
 label fight_choice:
+    $success = renpy.random.randint(1, 3)
+    $damage_done = 0
     menu choose_attack_type:
         "Attack on your own.":      
             jump hit_attack
@@ -50,11 +52,9 @@ label fight_choice:
             jump ally_attack
 
 label player_attack_success_check:
-    $success = renpy.random.randint(1, 3)
-
-    if 1 == success or 2 == success:
+    if success in [1,2]:
         antipope "Hey!"
-    else:
+    elif damage_done > 0:
         antipope "Hehe, too slow!"
         narrator "The cheeky bastard is quick, you missed him."
         $damage_done = 0
@@ -83,7 +83,10 @@ label hit_attack:
         "{color=#e717a2}I'm rich. I'll just heal myself.{/color}" if is_rich():
             play sound player_character.get_sound_effect()
             $damage_dealt = 0
-            $self_hp += 45
+            $healing = renpy.random.randint(40, 70)
+            $self_hp += healing
+
+            narrator "[healing] health regenerated."
 
         "Back":
             jump fight_choice
