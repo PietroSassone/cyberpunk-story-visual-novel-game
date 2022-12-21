@@ -23,6 +23,7 @@ __pypackages__/
 *.txt
 .vscode
 project.json
+.idea
 
 # Ren'Py specific
 *.rpyc

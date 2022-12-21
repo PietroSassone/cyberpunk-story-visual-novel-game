@@ -139,7 +139,7 @@ label subway_lady:
 
         "{color=#34b2e47f}<Talk to her about some philosophy. Is the seat even real?>{/color}" if is_shaman():
             play sound player_character.get_sound_effect()
-            old_lady "Oh my! You're so intelelctual. I had no idea!"
+            old_lady "Oh my! You're so intellectual. I had no idea!"
             narrator "Says the old lady with happy tears in her eyes."
             narrator "She shows you photographs of her grandchildren and you become instant friends."
             $player_character.add_friend(old_char)
