@@ -162,7 +162,7 @@ label talk_to_hobo:
             hobo "I'll go on and convert more people in the park, hallelujah!"
 
             $show_hints = True
-            hobo "You can chack the hints from now on in the top right corner of your retinal computer!"
+            hobo "You can check the hints from now on in the top right corner of your retinal computer!"
             hobo "Also, consider me your friend. I'll come to your side when you need help converting more infidel dogs!"
 
             $player_character.add_friend(hobo_char)
