@@ -8,7 +8,7 @@ class Friend:
     TECHNO_CHICKEN = 'Techno chicken'
     OLD_LADY = 'Cherie the old lady'
     POLITICIAN = 'Politician'
-    STREET_PROTESTERS = 'Street protesters'
+    STREET_PROTESTER = 'Street protester'
     HOBO = 'Hobo'
 
     AUDIO = 'audio'
@@ -22,7 +22,7 @@ class Friend:
         TECHNO_CHICKEN: f'{CHARACTERS}/chicken.png',
         OLD_LADY: f'{CHARACTERS}/old_lady chill.png',
         POLITICIAN: f'{CHARACTERS}/politician.png',
-        STREET_PROTESTERS: f'{CHARACTERS}/protesters.png',
+        STREET_PROTESTER: f'{CHARACTERS}/protester.png',
         HOBO: f'{CHARACTERS}/hobo.png',
     }
 
@@ -32,7 +32,7 @@ class Friend:
         TECHNO_CHICKEN: f'Listen to me! If I were you, I wouldn\'t listen to clowns. {CORRECT_HINT_COMMON_PART}', 
         OLD_LADY: 'I-I really don\'t know... I haven\'t done any rituals since my satanistic sacrifices when I was young. I remember something about cats...',
         POLITICIAN: f'I believe it\'s best to collect the most magic power that is possible. I\'m a politician, would I lie to you? {CORRECT_HINT_COMMON_PART}', 
-        STREET_PROTESTERS: 'I think you should throw that cat in. What could go wrong, am I right?', 
+        STREET_PROTESTER: 'I think you should throw that cat in. What could go wrong, am I right?', 
         HOBO: f'{CORRECT_HINT_COMMON_PART} Or whatever. What I am even doing here???', 
     }
 
@@ -42,7 +42,7 @@ class Friend:
         TECHNO_CHICKEN: f'{AUDIO}/chicken.mp3',
         OLD_LADY: f'{AUDIO}/old-lady-scream.mp3',
         POLITICIAN: f'{AUDIO}/cash.mp3',
-        STREET_PROTESTERS: f'{AUDIO}/woohoo.mp3',
+        STREET_PROTESTER: f'{AUDIO}/woohoo.mp3',
         HOBO: f'{AUDIO}/old_man_laugh.mp3'
     }
 

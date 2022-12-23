@@ -36,11 +36,10 @@ label city_center_streets:
     narrator "The situation is tense. Anything could happen here..."
     narrator "The leader of the crowd tries to pull you in to their protest."
 
-    show protesters at center:
-        zoom 2.5
+    show protester at right
 
     protester "Join us! Let's protest together for a better tomorrow!"
-    play sound protesters_char.get_sound_effect()
+    play sound protester_char.get_sound_effect()
 
     menu protesting_crowd:
         "No offense, but I just really don't care about it all.":
@@ -48,7 +47,7 @@ label city_center_streets:
             narrator "The protester is offentded. She shouts something about calling her lawyer on you for the insult."
             $player_character.increase_lawsuits()
             if enough_lawsuits_for_jail:
-                hide protesters
+                hide protester
                 jump jail
         
         "<Try to calm them down>":
@@ -59,9 +58,7 @@ label city_center_streets:
 
             narrator "The people around you calm down. Their anger turns into apathy and disappointment."
             protester "Eh... Guess I'll just have to go home and drown my frustration into stress eating."
-            protester "Here, I'll give you my pack of potato chips. I won't need it anymore."
-
-            $player_character.add_inventory_item(CHIPS)
+           
             narrator "You leave the street, as the crowd starts to disband."
          
         "{color=#fa510e}<Dark Knight> Let's start a riot!{/color}" if is_dark():
@@ -74,7 +71,7 @@ label city_center_streets:
 
             show bg riot with fade
             protester "Hell yeah! Let's show them! Charge my brothers and sisters!"
-            hide protesters
+            hide protester
 
             narrator "You nasty little devil."
             narrator "The crowd is wrestling with the cops and looting homes as you walk away, smiling happily."
@@ -83,7 +80,7 @@ label city_center_streets:
             narrator "Another big win: these people will surely come to your help later if they don't end up in jail."
             narrator "They've even left behind a bag of chips!"
 
-            $player_character.add_friend(protesters_char)
+            $player_character.add_friend(protester_char)
             $player_character.increase_dark_deeds()
             $player_character.add_inventory_item(CHIPS)
 
@@ -98,14 +95,19 @@ label city_center_streets:
 
             protester "Come on brothers and sisters! Let's devote our lives to bringing the holy light to everyone possible!"
             protester "We'll convert the city, even if they don't want it. They just don't know yet that it is their best interest!"
+            protester "Here, I'll give you my pack of potato chips. I won't need it anymore."
+
+            $player_character.add_inventory_item(CHIPS)
+
             narrator "So they start breaking into buildings, looking for people to convert."
             narrator "You leave the scene satisfied that you've made the world a better place."
 
-            $player_character.add_friend(protesters_char)
+            $player_character.add_friend(protester_char)
             $player_character.increase_holy_deeds()
 
             narrator "Another big win: your holy army will surely come to your help later."
 
+    hide protester
     $dealt_with_protesters = True
     jump city_center
     

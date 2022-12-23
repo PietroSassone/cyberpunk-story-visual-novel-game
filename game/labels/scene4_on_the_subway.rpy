@@ -11,7 +11,7 @@ label on_subway:
         jump subway_lady
 
 label subway_surprise:
-    show banker angry at right
+    show banker angry at left
 
     narrator "Suddenly you're faced with the angry banker from before."
 

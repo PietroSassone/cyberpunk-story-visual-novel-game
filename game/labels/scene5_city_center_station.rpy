@@ -58,8 +58,7 @@ label vote_for_me:
     narrator "Even worse than the previous faces. A politician."
 
     if is_holy():
-        show bishop at left:
-            zoom 2.0
+        show bishop at left
 
         bishop "This person is a heretic dog! She's withdrawn money from the church!"
         bishop "Here's our first chance to cleanse the world from evil! Punish the heretic!"

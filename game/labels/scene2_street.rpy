@@ -23,7 +23,7 @@ label street:
     narrator "So you're making your way towards the subway station on the corner."
     narrator "When suddenly a man steps in your way."
 
-    show banker at right
+    show banker at left
     
     banker "Hey my dude! Don't be alarmed. I'm just an average banker. Totally legit. Really!"
     banker "So you've got some cigarettes for me?"
@@ -34,7 +34,7 @@ label street:
 
         "Nope, I don't.":
             
-            show banker angry at right:
+            show banker angry at left:
                 
             banker "F*** you."
             narrator "The man seems angry. He struts off towards the subway station."

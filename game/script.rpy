@@ -32,7 +32,7 @@ define PSYCHO_CLOWN = 'Psycho Clown'
 define TECHNO_CHICKEN = 'Techno chicken'
 define OLD_LADY = 'Cherie the old lady'
 define POLITICIAN = 'Politician'
-define STREET_PROTESTERS = 'Street protesters'
+define STREET_PROTESTER = 'Street protester'
 define HOBO = 'Hobo'
 
 
@@ -57,7 +57,7 @@ label start:
         girl_char = Friend(GIRL, '{color=#f010b8}Girl ally attack: rocket launcher.{/color}', 35, 45, '#f010b8')
         chicken_char = Friend(TECHNO_CHICKEN, '{color=#1b138a}Chicken ally attack: peck peck.{/color}', 100, 150, '#1b138a')
         politician_char = Friend(POLITICIAN, '{color=#756763}Politician ally attack: long boring speech.{/color}', 10, 50, '#756763')
-        protesters_char = Friend(STREET_PROTESTERS, '{color=#d40000}Protester ally attack: throw molotov cocktails.{/color}', 0, 80, '#d40000')
+        protester_char = Friend(STREET_PROTESTER, '{color=#d40000}Protester ally attack: throw molotov cocktails.{/color}', 0, 80, '#d40000')
         hobo_char = Friend(HOBO, '{color=#79ac81}Hobo ally attack: throw dirty napkins.{/color}', 10, 40, '#79ac81')
 
         def is_squirrel():

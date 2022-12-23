@@ -165,15 +165,14 @@ label ally_attack:
             $damage_done = politician_char.get_attack_damage()
             hide politician with moveoutleft
 
-        "[protesters_char._ability]" if player_character.has_friend(STREET_PROTESTERS):
-            play sound protesters_char.get_sound_effect()
-            show protesters at left:
-                zoom 2.0
+        "[protester_char._ability]" if player_character.has_friend(STREET_PROTESTER):
+            play sound protester_char.get_sound_effect()
+            show protester at left
 
             protester "Down with the system! Down with everybody! Anarchy!!!"
 
-            $damage_done = protesters_char.get_attack_damage()
-            hide protesters with moveoutleft
+            $damage_done = protester_char.get_attack_damage()
+            hide protester with moveoutleft
 
         "[chicken_char._ability]" if player_character.has_friend(TECHNO_CHICKEN):
             play sound chicken_char.get_sound_effect()
