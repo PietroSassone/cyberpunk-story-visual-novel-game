@@ -3,19 +3,19 @@ screen Status():
     frame:
         xalign 0.1
         yalign 0.1
-        xpadding 15
-        ypadding 60
+        xpadding 43
+        ypadding 50
       
         hbox:
             spacing 20
 
             vbox:
                 xoffset 15
-                yoffset 15
+                yoffset 2
                 spacing 30
                 text "Character:" size 50
                 text player_character.get_class_name() size 50
-                text "Extra association:" size 50
+                text "\n\nExtra association:" size 50
                 text player_character.get_knight_status() size 50
 
             vbox:    
@@ -25,7 +25,7 @@ screen Status():
 
     frame:
         xalign 0.1
-        yalign 0.7
+        yalign 0.85
         ypadding 60
       
         hbox:
@@ -49,13 +49,13 @@ screen Status():
     
     frame:
         xalign 0.6
-        yalign 0.5
+        yalign 0.0
         xpadding 15
 
         text "Friends" size 50 xalign 0.5
 
     frame:
-        xalign 0.8
+        xalign 0.78
         yalign 0.0
         xpadding 15
         ypadding 30

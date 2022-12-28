@@ -31,7 +31,7 @@ label central_station:
         bishop "I see potential only you. Join the church! Become a Holy Knight! Help us spread righteousness!"
         bishop "Should you choose to join us, you could unleash your inner holyness.\nIt would unlock potential
                 new opportunities in your life."
-        bishop "It's a great ooprtunity! Don't let the celibacy scare you!"
+        bishop "It's a great opportunity! Don't let the celibacy scare you!"
         bishop "What say you, noble man?"
 
         menu holyness:
@@ -79,7 +79,7 @@ label vote_for_me:
         "{color=#34b2e47f}No. You vote for me!{/color}" if is_shaman():
             politician "..."
             politician "I... Uh... Hmm..."
-            narrator "She's totally baffled by your superior intelligence. She's lost for words. She's defeted."
+            narrator "She's totally baffled by your superior intelligence. She's lost for words. She's defeated."
             politician "Well, oh, okay."
             narrator "Realising she's got a lot to learn, she bows her head then leaves."
             narrator "She's now your friend that you can call on."

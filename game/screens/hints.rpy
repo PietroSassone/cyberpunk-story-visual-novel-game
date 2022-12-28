@@ -16,7 +16,7 @@ screen Hints():
             text "- You can make friends along your way today. Only specific actions lead to a character becoming your friends." size 25
             text "- Some such actions are only available to a given class. Or it may simply depend on your behaviour." size 25
             text "- All of the characters you can befriend are:" size 25
-            text "- The girl with the shoe collecting addiction. The old lady. The wise and deadly techno chicken. A politician. A crazy clown. A group of protesters." size 25
+            text "- The girl with the shoe collecting addiction. The old lady.\n A hobo. The wise and deadly techno chicken. A politician. A crazy clown. A group of protesters." size 25
             text "- You can also collect these items next to what you started with: a zombie arm, a grenade, a chainsaw, a chicken feather, a bag of chips and a cat." size 25
 
             text "{b}{u}Locations:{b}{u}"
@@ -24,7 +24,7 @@ screen Hints():
             text "- It is a point of no return. Only go there if you want to conclude the day." size 25
         
         vbox:
-            yalign 0.9
+            yalign 0.95
             spacing 15
             xoffset 35
             yoffset -50

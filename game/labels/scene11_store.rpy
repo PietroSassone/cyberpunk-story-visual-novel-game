@@ -38,7 +38,7 @@ label in_the_store:
         "<Run away. I've had enough of this craze for today.>":
             narrator "So you sprint out of the store."
             cultist "Hey! I haven't finished talking to you man!"
-            cultist "Fine. Run away! You'll be haring from my lawyer!"
+            cultist "Fine. Run away! You'll be hearing from my lawyer!"
             $player_character.increase_lawsuits()
             
             if enough_lawsuits_for_jail():
@@ -106,9 +106,11 @@ label ambush:
 
         menu girl_ambush:
             "Oh my! Take the shoe, just don't kill me!":
-                girl "Haha! Thanks4 So long, you fool!"
+                girl "Haha! Thanks! So long, you fool!"
                 $player_character.get_inventory().pop(LEFT_SHOE)
-                $player_character.get_inventory().pop(RIGHT_SHOE)
+                
+                if player_character.get_inventory().get(RIGHT_SHOE) != None:
+                    $player_character.get_inventory().pop(RIGHT_SHOE)
                 narrator "She takes off, leaving you barefooted."
               
             "{color=#fa510e}<Dark Knight> I don't hive time for this. <Knock her out>{/color}" if is_dark():
