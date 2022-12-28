@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "1.0.0"
+define config.version = "1.0.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -71,13 +71,13 @@ Links to the songs used:\n
 - {a=https://www.youtube.com/watch?v=swURTfOt6QI}Gaming Music by Alexi Action & Infraction (No Copyright Music) /Hyperloop{/a}"\n
 - {a=https://www.youtube.com/watch?v=K7IV1pz2FHs}Cyberpunk Gaming Trailer by Infraction [No Copyright Music] / Just Evil{/a}"\n
 - {a=https://www.youtube.com/watch?v=xziG5zr-c_4}Independence [No Copyright Music] / Take My Heart and Burn It Down{/a}"\n
-- {a=https://www.youtube.com/watch?v=n79aphwhpW0}Y&V - Lune [NCS Release{/a}"\n
+- {a=https://www.youtube.com/watch?v=n79aphwhpW0}Y&V - Lune [NCS Release]{/a}"\n
 - {a=https://www.youtube.com/watch?v=6l10nW17FW8}Cyberpunk 90s Industrial Metal - Hardware // Royalty Free [No Copyright Music]{/a}"\n
 - {a=https://www.youtube.com/watch?v=w1fa3BiWB6E}(FREE) Nu Metal Rock Instrumental Music / [No Copyright] #ArkZion{/a}"\n
 - {a=https://www.youtube.com/watch?v=EZUPEoj3Qjs}Jim Yosef - Samurai [NCS Release]{/a}"\n
 - {a=https://www.youtube.com/watch?v=pRTyyJEdM4k}ROYALTY FREE Political Campaign Background Music / Patriotic Background Music Royalty Free{/a}"\n
 - {a=https://www.youtube.com/watch?v=0vvHF0RKT9Q}Best Of Programming / Coding / Crypto Music | No Copyright Music | Millennials Melody Originals{/a}"\n
-- {a=https://www.youtube.com/watch?v=AL5XyLQRCiw}DEgITx - Aurora (feat. Matty M.{/a}, {a=https://linktr.ee/degitx}DEgiTX{/a}, {a=https://www.youtube.com/user/12matty31}Matty M.{/a}"\n
+- {a=https://www.youtube.com/watch?v=AL5XyLQRCiw}DEgITx - Aurora (feat. Matty M.){/a}, {a=https://linktr.ee/degitx}DEgiTX{/a}, {a=https://www.youtube.com/user/12matty31}Matty M.{/a}"\n
 """)
 
 ## A short name for the game used for executables and directories in the built

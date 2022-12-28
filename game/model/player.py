@@ -38,10 +38,10 @@ class Player:
     EXTRA_INVETORY_ITEMS = {
         CHICKEN_FEATHER: InventoryItem(CHICKEN_FEATHER, f'{SCREEN_ELEMENTS}/feather_icon.png', 60, 80, MagicLevel.STRONG), 
         ZOMBIE_ARM: InventoryItem(ZOMBIE_ARM, f'{SCREEN_ELEMENTS}/arm_icon.png', 50, 75, MagicLevel.MEDIUM),
-        CHAINSAW: InventoryItem(CHAINSAW, f'{SCREEN_ELEMENTS}/chainsaw_icon.png', 50, 60, MagicLevel.MEDIUM),
+        CHAINSAW: InventoryItem(CHAINSAW, f'{SCREEN_ELEMENTS}/chainsaw_icon.png', 50, 70, MagicLevel.MEDIUM),
         CAT: InventoryItem(CAT, f'{SCREEN_ELEMENTS}/cat_icon.png', ZERO, ZERO, MagicLevel.EXTREME),
         GRENADE: InventoryItem(GRENADE, f'{SCREEN_ELEMENTS}/grenade_icon.png', ZERO, ZERO, MagicLevel.LOW),
-        CHIPS: InventoryItem(CHIPS, f'{SCREEN_ELEMENTS}/chips_icon.png', 300, 1000, MagicLevel.MEDIUM)
+        CHIPS: InventoryItem(CHIPS, f'{SCREEN_ELEMENTS}/chips_icon.png', 500, 1000, MagicLevel.MEDIUM)
     }
 
     def __init__(self, class_name):

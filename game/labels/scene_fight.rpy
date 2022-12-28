@@ -1,19 +1,22 @@
+define enemy_attack_types = {
+    1: ['He bites your feet!', 10, 40],
+    2: ['He pisses on your feet!', 20, 50],
+    3: ['He rubs his used toy ball to your feet!', 30, 65]
+}
+
 label boss_fight:
-    $self_hp = 300
-    $antipope_hp = 300
+    $self_hp = 500
+    $antipope_hp = 500
     show screen BossFight
     jump enemy_attacks
 
 label enemy_attacks:
     if antipope_hp > 0 and self_hp > 0:
-        $attack_tpye = renpy.random.randint(1, 2)
+        $attack_tpye = renpy.random.randint(1, 3)
+        $narrator_message = enemy_attack_types.get(attack_tpye)[0]
 
-        if 1 == attack_tpye:
-            narrator "He bites your feet!"
-            $feet_damage = renpy.random.randint(10, 40)
-        else:
-            narrator "He pisses on your feet!"
-            $feet_damage = renpy.random.randint(20, 50)
+        narrator "[narrator_message]"
+        $feet_damage = renpy.random.randint(enemy_attack_types.get(attack_tpye)[1], enemy_attack_types.get(attack_tpye)[2])
         
         if RIGHT_SHOE not in player_character.get_inventory():
             narrator "You take increased damage because you've lost your right shoe."
@@ -70,19 +73,19 @@ label player_attack_success_check:
 label hit_attack:
     menu simple_attack:
         "Hit him.":
-            $damage_dealt = renpy.random.randint(1, 10)
+            $damage_done = renpy.random.randint(1, 20)
 
         "{color=#f00}Hit him hard.{/color}" if is_squirrel():
             play sound player_character.get_sound_effect()
-            $damage_done = renpy.random.randint(10, 30)
+            $damage_done = renpy.random.randint(10, 40)
 
         "{color=#34b2e47f}Hit him with a high school mathematics excercise book.{/color}" if is_shaman():
             play sound player_character.get_sound_effect()
-            $damage_dealt = renpy.random.randint(20, 40)
+            $damage_done = renpy.random.randint(20, 40)
 
         "{color=#e717a2}I'm rich. I'll just heal myself.{/color}" if is_rich():
             play sound player_character.get_sound_effect()
-            $damage_dealt = 0
+            $damage_done = 0
             $healing = renpy.random.randint(40, 70)
             $self_hp += healing
 
@@ -100,6 +103,14 @@ label item_attack:
             narrator "He's allergic to gluten it seems. You've knocked him out instantly."
             $success = 1
             $damage_done = player_character.get_item(CHIPS).get_attack_damage()
+
+        "Eat the chips for extra health." if player_character.has_item(CHIPS):
+            $damage_done = 0
+            $healing = player_character.get_item(CHIPS).get_attack_damage()
+
+            $self_hp += healing
+            narrator "[healing] health regenerated."
+            $player_character.get_inventory().pop(CHIPS)
 
         "Throw a cat AIDS grenade at him." if player_character.has_item(GRENADE):
             antipope "Lol. I'm a doggy, that doesn't work against me!"
