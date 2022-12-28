@@ -18,8 +18,7 @@ label order_beer:
 
 label talk_to_clown:
     hide screen Bar
-    show clown at center:
-        zoom 2.0
+    show clown at center
 
     narrator "Uh oh. You just bumped into a quite psycho looking clown."
     clown "Howdy my dude! I'm so glad to meet you. Hehehehe..."

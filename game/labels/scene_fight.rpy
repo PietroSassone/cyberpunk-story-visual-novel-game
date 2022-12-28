@@ -138,8 +138,7 @@ label ally_attack:
     menu friend_attack:
         "[clown_char._ability]" if player_character.has_friend(PSYCHO_CLOWN):
             play sound clown_char.get_sound_effect()
-            show clown at left:
-                zoom 2.0
+            show clown at left
 
             clown "Nyghehehe!"
 

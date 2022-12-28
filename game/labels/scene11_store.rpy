@@ -1,4 +1,4 @@
-define cultist = Character("Cultist", color = "#555421")
+define cultist = Character("Cultist", color = "#e6e35e")
 define cashier = Character("Cashier", color = "#dad9b7")
 
 
@@ -17,14 +17,13 @@ label in_the_store:
     narrator "Once more, a strange man grabs your attention."
 
     show cultist at right:
-        zoom 2.0
+        xalign 0.7
 
     cultist "My dude, you've got a minute to talk about our Lord?"
     cultist "I'm talking about tha Antipope of course. Yes. He is here."
     cultist "The head of the Anti-church. If you were not afraid yet, you'd better start being afraid now!"
 
-    show cashier man at left:
-        zoom 2.5
+    show cashier man at left
     cashier "Don't listen to this lunatic! He's been talking nonesense around this part of the town all day."
     cashier "Antipope, of course... Bs. These sects have really gotten out of hand."
     hide cashier man

@@ -48,29 +48,29 @@ screen Status():
                 text "[player_character._lawsuits]"
     
     frame:
-        xalign 0.74
-        yalign 0.0
+        xalign 0.6
+        yalign 0.5
         xpadding 15
 
         text "Friends" size 50 xalign 0.5
 
     frame:
         xalign 0.8
-        yalign 0.4
-        ypadding 30
+        yalign 0.0
         xpadding 15
+        ypadding 30
+        yoffset -10
 
         hbox: 
-            yoffset 15
+            yoffset 5
             vbox:
                 spacing 10
                 for friend in player_character.get_friends():
                     image friend.get_image():
-                        zoom 0.3 
-            vbox:    
-                spacing 125
-                for friend in player_character.get_friends():
-                    text friend.get_name() size 40
+                        zoom 0.175 
+                        xalign 0.5
+
+                    text friend.get_name() size 30 xalign 0.5          
 
     imagebutton:
         xalign 1.0
