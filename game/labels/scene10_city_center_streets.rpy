@@ -44,7 +44,7 @@ label city_center_streets:
     menu protesting_crowd:
         "No offense, but I just really don't care about it all.":
             narrator "So you leave the scene quickly, before it escalates further."
-            narrator "The protester is offentded. She shouts something about calling her lawyer on you for the insult."
+            narrator "The protester is offended. She shouts something about calling her lawyer on you for the insult."
             $player_character.increase_lawsuits()
             if enough_lawsuits_for_jail:
                 hide protester
