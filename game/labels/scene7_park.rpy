@@ -52,7 +52,7 @@ label talk_to_chicken:
         "{color=#34b2e47f}Sounds great. Let's talk about the meaning of life!{/color}" if is_shaman():
             play sound chicken_char.get_sound_effect()
             chicken "Fantastic, I bumped into a man of culture!"
-            narrator "So you spend the afternoon having a picknick with the chicken. Discussing the life, the universe and everything."
+            narrator "So you spend the afternoon having a picnick with the chicken. Discussing the life, the universe and everything."
 
             show bg park with fade
             narrator "The chicken really enjoyed your discussion."

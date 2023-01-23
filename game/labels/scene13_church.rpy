@@ -7,7 +7,7 @@ label church_tunnel:
     narrator "So you've decided to go after this mysterious Antipope."
     show bg church with pushright
     narrator "Supposedly he's hiding in the old techno-communist nihilistic church by the docks. That place has been locked down for a while."
-    narrator "According to the conspiracy theory websites about the guy, the easiest way in to the church is an unused undergroound tunnel."
+    narrator "According to the conspiracy theory websites about the guy, the easiest way into the church is an unused underground tunnel."
 
     show bg tunnel with fade
     narrator "This one right here. Not a creepy place at all."
@@ -29,7 +29,7 @@ label church:
     hide screen MenuUI
     show bg church interior with pushright
 
-    narrator "The interior of the abandoned techno church is very sinister. Only some seriously wacked person would use this place as a base of operations."
+    narrator "The interior of the abandoned techno church is very sinister. Only some seriously whacked person would use this place as a base of operations."
     narrator "I bet your mind is already racing. Imagining all kinds of horrors."
     
     show monster one at left:
@@ -58,7 +58,7 @@ label church:
     antipope "I'm glad you're here. We don't get so many visitors here."
     antipope "What do I mean by \"We\"?"
     antipope "Well of course me, and my army of soul sucking zombies."
-    antipope "So you've come to submit and be my slave wilingly? It'll be so much fun! We'll play fetch all day long!"
+    antipope "So you've come to submit and be my slave willingly? It'll be so much fun! We'll play fetch all day long!"
     antipope "Yes, that's why I've created my plan to overthrow this city. I'll blow up cat AIDS bombs everywhere."
     antipope "Then people will suffer, and it they will have no choice, but to play with me all day! Yaay!"
 

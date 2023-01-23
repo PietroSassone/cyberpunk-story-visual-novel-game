@@ -105,7 +105,7 @@ label ambush:
             girl "I prey on rich folk like you! You're being robbed!"
 
         menu girl_ambush:
-            "Oh my! Take the shoe, just don't kill me!":
+            "Oh my! Take the shoes, just don't kill me!":
                 girl "Haha! Thanks! So long, you fool!"
                 $player_character.get_inventory().pop(LEFT_SHOE)
                 
@@ -118,7 +118,7 @@ label ambush:
                 play sound girl_char.get_sound_effect()
 
                 narrator "Just like that."
-                narrator "She runs away, shouting very vulgaaric insults at you. Also something about a lawsuit."
+                narrator "She runs away, shouting very vulgaric insults at you. Also something about a lawsuit."
 
                 $player_character.increase_dark_deeds()
                 
@@ -131,8 +131,8 @@ label ambush:
             "{color=#fcff37}<Holy Knight> <Excorcise the girl>{/color}" if is_holy():
                 narrator "Being a Holy Knight has granted you the ability to excorcise the girl."
                 narrator "The girl has seriously swayed from the right path. But it is not her fault."
-                narrator "It's the fault of the demons posessibng her. Most likely."
-                narrator "I cast you out, evil spirit! Leve this innocent girl!"
+                narrator "It's the fault of the demons posessing her. Most likely."
+                narrator "I cast you out, evil spirit! Leave this innocent girl!"
 
                 narrator "Nothing seems to be happening."
                 narrator "Exorcizamus te, omnis immundus spiritus!"
@@ -143,7 +143,7 @@ label ambush:
                 girl "I'm calling my lawyer!!!"
 
                 narrator "She runs away, rubbing her eyes. You've successfully cleansed her soul!"
-                narrator "Or maybe it was just the water you prayed in her eyes. It's a victory either way."
+                narrator "Or maybe it was just the water you sprayed in her eyes. It's a victory either way."
 
                 $player_character.increase_lawsuits()
                 $player_character.increase_holy_deeds()

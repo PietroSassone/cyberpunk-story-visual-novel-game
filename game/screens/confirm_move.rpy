@@ -2,6 +2,8 @@ screen ConfirmMove():
     frame:
         xalign 0.5
         yalign 0.5
+        xpadding 30
+        ypadding 30
         vbox:
             spacing 20
             text "{color=#910505}Warning! Entering the restaurant is a point of no return.{/color}" xalign 0.5
